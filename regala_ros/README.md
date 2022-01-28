@@ -15,3 +15,20 @@
  - sudo python3 -m pip install opencv-python opencv-contrib-python
 
 6. scikit-learn install 
+
+> This is requirements to run app.py
+7. pip install flask
+8. pip install sqlalchemy
+9. pip install mysql-connector-python
+
+### API
+1. recordRegala
+    * url: /recordRegala
+    * method: POST
+    * request:
+```json
+{
+    "user_id": 1,
+    "equipment_id": "equipment_id"
+}
+```
