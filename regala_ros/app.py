@@ -19,8 +19,6 @@ app.database = database
 @app.route('/recordRegala', methods = ['POST'])
 def record_regala():
     req_body = request.json
-    user_id = req_body['user_id']
-    equipment_id = req_body['equipment_id']
     
     red.publish('regalaData', json.dumps(req_body))
 
@@ -28,7 +26,3 @@ def record_regala():
 
 if __name__ == '__main__':
     app.run('localhost', 8080)
-
-
-def transactional(query, body):
-    app.database.execute(text(query), body).lastrowid
