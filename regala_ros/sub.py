@@ -3,7 +3,7 @@ import redis
 from multiprocessing import Process
 import json
 
-redis_conn= redis.Redis(charset='utf-8', decode_responses=True)
+redis_conn= redis.StrictRedis('localhost', 6379, charset="utf-8", decode_responses=True)
 
 import time
 # rtsp_test.func()
