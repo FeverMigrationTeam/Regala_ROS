@@ -27,10 +27,10 @@
 ### 실행 파일 관련 내용
 * references
 > 1. redis
-[https://blog.devgenius.io/how-to-use-redis-pub-sub-in-your-python-application-b6d5e11fc8de]
-[https://www.twilio.com/blog/sms-microservice-python-twilio-redis-pub-sub?utm_source=pocket_mylist]
+(https://blog.devgenius.io/how-to-use-redis-pub-sub-in-your-python-application-b6d5e11fc8de)   
+(https://www.twilio.com/blog/sms-microservice-python-twilio-redis-pub-sub?utm_source=pocket_mylist)
 > 2. flask
-[https://rekt77.tistory.com/103]
+(https://rekt77.tistory.com/103)
 
 * 실행 명령
 > python sub.py
