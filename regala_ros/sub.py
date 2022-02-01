@@ -23,6 +23,7 @@ def recorder_func(data):
 # google_upload.func()
 def upload_func(data):
     # ** 중요사항 ** url을 update해서 publish로 전달해주어야 함
+    data = json.loads(data)
     url = f"www.placarnival.com/regala/google_drive/서경대 Futsal Park 2021.12.15 16:5815.mp4"
     data.update({"url": url})
     # publish 달면, videosub.py에서 subscribe해서 url db에 저장할 수 있습니다
