@@ -21,6 +21,22 @@ def sub():
 
             dao.execute(
                 '''
+                    UPDATE equipment
+                    SET equipment_service_state = 0
+                    WHERE equipment_idx=%s;
+                ''', data.get("equipment_id")
+            )
+
+            dao.execute(
+                '''
+                    UPDATE record_state
+                    SET user_user_idx = %s, record_status = 'LISTEN'
+                    WHERE equipment_equipment_idx = %s;
+                ''', (data.get("user_id"), data.get("equipment_id"))
+            )
+
+            dao.execute(
+                '''
                     INSERT INTO 
                     video (video_url, video_title, equipment_equipment_idx, user_user_idx)
                     VALUES (%s, %s, %s, %s);
