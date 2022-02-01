@@ -30,7 +30,7 @@ def sub():
             dao.execute(
                 '''
                     UPDATE record_state
-                    SET user_user_idx = %s, record_status = 'LISTEN'
+                    SET user_user_idx = %s, record_status = 'UPLOAD'
                     WHERE equipment_equipment_idx = %s;
                 ''', (data.get("user_id"), data.get("equipment_id"))
             )

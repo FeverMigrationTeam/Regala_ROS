@@ -68,4 +68,4 @@ def get_record_state(equipment_id):
 
 
 if __name__=="__main__":
-    app.run('localhost', 8080) # 외부 접속 가능하게 하기 위해선 localhost => 0.0.0.0으로 변경해 주셔야 합니다
+    app.run('0.0.0.0', 8080) # 외부 접속 가능하게 하기 위해선 localhost => 0.0.0.0으로 변경해 주셔야 합니다
