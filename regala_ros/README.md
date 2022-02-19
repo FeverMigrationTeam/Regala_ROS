@@ -23,6 +23,7 @@
 1. pip install Flask
 2. pip install redis
 3. pip install pymysql
+4. sudo apt install redis-server
 
 ### 실행 파일 관련 내용
 * references
