@@ -9,7 +9,7 @@ db = {
 
 # REDIS pubsub 설정
 REDIS = {
-    'ip': '127.0.0.1',  # pubsub은 로컬에서 처리 가능하기 때문에 127.0.0.1로도 접속 가능할 것 같습니다
+    'ip': '127.0.0.1',
     'port': 6379,
     'charset': 'utf-8',
     'decode_responses': True
