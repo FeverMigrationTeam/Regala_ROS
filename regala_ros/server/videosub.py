@@ -1,4 +1,4 @@
-from manage import getRedis, DAO
+from .flask.manage import getRedis, DAO
 
 from multiprocessing import Process
 import json
