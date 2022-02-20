@@ -5,6 +5,7 @@ services:
         image: redis:alpine
         command: redis-server --port 6379
         container_name: redis_boot
+        restart: always
         hostname: redis_boot
         labels:
             - "name=redis"
