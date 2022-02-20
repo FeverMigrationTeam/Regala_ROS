@@ -38,7 +38,7 @@ def sub():
             dao.execute(
                 '''
                     INSERT INTO 
-                    video (video_url, video_title, equipment_equipment_idx, user_user_idx)
+                    video (video_url, video_title, video_equipment_idx, video_user_idx)
                     VALUES (%s, %s, %s, %s);
                 ''', (data.get("url"), video_title, data.get("equipment_id"), data.get("user_id"))
             )
