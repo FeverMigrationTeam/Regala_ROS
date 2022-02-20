@@ -9,7 +9,7 @@ db = {
 
 # REDIS pubsub 설정
 REDIS = {
-    'ip': '52.78.23.134',
+    'ip': '0.0.0.0',
     'port': 6379,
     'charset': 'utf-8',
     'decode_responses': True
