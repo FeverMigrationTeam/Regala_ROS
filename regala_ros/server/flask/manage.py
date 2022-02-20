@@ -29,4 +29,4 @@ def getRedis():
     PORT = setting['port']
     CHARSET = setting['charset']
     DECODE_RES = setting['decode_responses']
-    return redis.StrictRedis(IP, PORT, charset=CHARSET, decode_responses=DECODE_RES)
+    return redis.Redis(host=IP, port=PORT, charset=CHARSET, decode_responses=DECODE_RES)
