@@ -1,4 +1,4 @@
-from .flask.manage import getRedis, DAO
+from manage import getRedis, DAO
 
 from multiprocessing import Process
 import json
@@ -48,6 +48,6 @@ def sub():
             print("message listening...")
 
 
-if __name__ == "__main__":
+if __name__=="__main__":
     p = Process(target=sub)
     p.start()
