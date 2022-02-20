@@ -6,5 +6,5 @@ RUN apt-get install -y python-dev
 RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN apt-get install -y default-mysql-client
-RUN apt-get install -y redis-server && service redis-server start
+RUN apt-get install -y redis-server && service redis-server start && service redis-server status
 CMD ["uwsgi", "uwsgi.ini"]
